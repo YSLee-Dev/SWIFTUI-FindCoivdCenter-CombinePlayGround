@@ -11,6 +11,8 @@
 		34E07B2B29E80DE7006D53F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E07B2A29E80DE7006D53F5 /* ContentView.swift */; };
 		34E07B2D29E80DEB006D53F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E07B2C29E80DEB006D53F5 /* Assets.xcassets */; };
 		34E07B3029E80DEB006D53F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E07B2F29E80DEB006D53F5 /* Preview Assets.xcassets */; };
+		34E07B3C29E81187006D53F5 /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E07B3B29E81187006D53F5 /* CenterAPIResponse.swift */; };
+		34E07B3F29E811AD006D53F5 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E07B3E29E811AD006D53F5 /* Center.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		34E07B2A29E80DE7006D53F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34E07B2C29E80DEB006D53F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E07B2F29E80DEB006D53F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34E07B3B29E81187006D53F5 /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
+		34E07B3E29E811AD006D53F5 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			children = (
 				34E07B2829E80DE7006D53F5 /* SWIFTUI_FindCovidCenterApp.swift */,
 				34E07B2A29E80DE7006D53F5 /* ContentView.swift */,
+				34E07B3D29E8118C006D53F5 /* Entity */,
 				34E07B2C29E80DEB006D53F5 /* Assets.xcassets */,
 				34E07B2E29E80DEB006D53F5 /* Preview Content */,
 			);
@@ -65,6 +70,15 @@
 				34E07B2F29E80DEB006D53F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34E07B3D29E8118C006D53F5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				34E07B3B29E81187006D53F5 /* CenterAPIResponse.swift */,
+				34E07B3E29E811AD006D53F5 /* Center.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E07B3F29E811AD006D53F5 /* Center.swift in Sources */,
 				34E07B2B29E80DE7006D53F5 /* ContentView.swift in Sources */,
+				34E07B3C29E81187006D53F5 /* CenterAPIResponse.swift in Sources */,
 				34E07B2929E80DE7006D53F5 /* SWIFTUI_FindCovidCenterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
