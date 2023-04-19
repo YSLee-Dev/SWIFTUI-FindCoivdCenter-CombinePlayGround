@@ -23,6 +23,17 @@ struct Center : Hashable, Decodable{
         case local = "지역"
     }
     
+    enum CodingKeys : String, CodingKey{
+        case id = "id"
+        case sido = "sido"
+        case name = "facilityName"
+        case address = "address"
+        case phoneNumber = "phoneNumber"
+        case lat = "lat"
+        case lng = "lng"
+        case centerType = "centerType"
+    }
+    
     enum Sido : String, Decodable, Identifiable, CaseIterable{
         case 서울특별시
         case 부산광역시

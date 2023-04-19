@@ -13,6 +13,10 @@
 		3499C13629EE9D9E00A4A92D /* SelectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C13529EE9D9E00A4A92D /* SelectRegionView.swift */; };
 		3499C13829EE9DB300A4A92D /* SelectRegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C13729EE9DB300A4A92D /* SelectRegionViewModel.swift */; };
 		3499C13C29EEA3FE00A4A92D /* SelectRegionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C13B29EEA3FE00A4A92D /* SelectRegionItem.swift */; };
+		3499C14129EFF2CE00A4A92D /* CenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C14029EFF2CE00A4A92D /* CenterRow.swift */; };
+		3499C14329EFF42E00A4A92D /* CenterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C14229EFF42E00A4A92D /* CenterList.swift */; };
+		3499C14729EFF5E800A4A92D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C14629EFF5E800A4A92D /* MapView.swift */; };
+		3499C14929EFF7E300A4A92D /* CenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499C14829EFF7E300A4A92D /* CenterDetailView.swift */; };
 		34E07B2929E80DE7006D53F5 /* SWIFTUI_FindCovidCenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E07B2829E80DE7006D53F5 /* SWIFTUI_FindCovidCenterApp.swift */; };
 		34E07B2B29E80DE7006D53F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E07B2A29E80DE7006D53F5 /* ContentView.swift */; };
 		34E07B2D29E80DEB006D53F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E07B2C29E80DEB006D53F5 /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		3499C13529EE9D9E00A4A92D /* SelectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionView.swift; sourceTree = "<group>"; };
 		3499C13729EE9DB300A4A92D /* SelectRegionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionViewModel.swift; sourceTree = "<group>"; };
 		3499C13B29EEA3FE00A4A92D /* SelectRegionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionItem.swift; sourceTree = "<group>"; };
+		3499C14029EFF2CE00A4A92D /* CenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterRow.swift; sourceTree = "<group>"; };
+		3499C14229EFF42E00A4A92D /* CenterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterList.swift; sourceTree = "<group>"; };
+		3499C14629EFF5E800A4A92D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3499C14829EFF7E300A4A92D /* CenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDetailView.swift; sourceTree = "<group>"; };
 		34E07B2529E80DE7006D53F5 /* SWIFTUI_FindCovidCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWIFTUI_FindCovidCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E07B2829E80DE7006D53F5 /* SWIFTUI_FindCovidCenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_FindCovidCenterApp.swift; sourceTree = "<group>"; };
 		34E07B2A29E80DE7006D53F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				3499C13F29EEA51800A4A92D /* Select */,
+				3499C14529EFF5BE00A4A92D /* Center */,
+				3499C14A29EFF7E900A4A92D /* Detail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -82,6 +92,24 @@
 				3499C13E29EEA50B00A4A92D /* Sub */,
 			);
 			path = Select;
+			sourceTree = "<group>";
+		};
+		3499C14529EFF5BE00A4A92D /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				3499C14229EFF42E00A4A92D /* CenterList.swift */,
+				3499C14029EFF2CE00A4A92D /* CenterRow.swift */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		3499C14A29EFF7E900A4A92D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3499C14629EFF5E800A4A92D /* MapView.swift */,
+				3499C14829EFF7E300A4A92D /* CenterDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		34E07B1C29E80DE6006D53F5 = {
@@ -201,11 +229,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3499C14329EFF42E00A4A92D /* CenterList.swift in Sources */,
 				3499C13C29EEA3FE00A4A92D /* SelectRegionItem.swift in Sources */,
 				3499C13629EE9D9E00A4A92D /* SelectRegionView.swift in Sources */,
 				3499C13829EE9DB300A4A92D /* SelectRegionViewModel.swift in Sources */,
+				3499C14729EFF5E800A4A92D /* MapView.swift in Sources */,
 				34E07B3F29E811AD006D53F5 /* Center.swift in Sources */,
 				3499C13029EE984800A4A92D /* CenterNetwork.swift in Sources */,
+				3499C14129EFF2CE00A4A92D /* CenterRow.swift in Sources */,
+				3499C14929EFF7E300A4A92D /* CenterDetailView.swift in Sources */,
 				3499C13429EE9B6B00A4A92D /* RequestToken.swift in Sources */,
 				3499C12D29EE975100A4A92D /* CenterAPI.swift in Sources */,
 				34E07B2B29E80DE7006D53F5 /* ContentView.swift in Sources */,
