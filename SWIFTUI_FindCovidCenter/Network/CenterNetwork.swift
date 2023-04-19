@@ -47,7 +47,8 @@ class CenterNetwork{
                 $0.data
             }
             .mapError{
-                $0 as! URLError
+                print($0)
+                return $0 as? URLError ?? .init(.unknown)
             }
             .eraseToAnyPublisher()
     }
