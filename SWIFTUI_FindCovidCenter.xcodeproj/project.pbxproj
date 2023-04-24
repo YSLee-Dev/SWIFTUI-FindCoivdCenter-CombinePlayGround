@@ -37,6 +37,7 @@
 		3499C14629EFF5E800A4A92D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3499C14829EFF7E300A4A92D /* CenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDetailView.swift; sourceTree = "<group>"; };
 		3499C14B29F13D9600A4A92D /* Combine_Study_One.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine_Study_One.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		34BA9C7129F683B100858A42 /* Combine_Study_Four.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine_Study_Four.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		34C0013729F14B570078700A /* Combine_Study_Two.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine_Study_Two.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		34C0013829F14FCC0078700A /* Combine_Study_Three.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine_Study_Three.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		34E07B2529E80DE7006D53F5 /* SWIFTUI_FindCovidCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWIFTUI_FindCovidCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +119,7 @@
 		3499C14C29F13DEE00A4A92D /* Combine_Study */ = {
 			isa = PBXGroup;
 			children = (
+				34BA9C7129F683B100858A42 /* Combine_Study_Four.playground */,
 				34C0013829F14FCC0078700A /* Combine_Study_Three.playground */,
 				34C0013729F14B570078700A /* Combine_Study_Two.playground */,
 				3499C14B29F13D9600A4A92D /* Combine_Study_One.playground */,
