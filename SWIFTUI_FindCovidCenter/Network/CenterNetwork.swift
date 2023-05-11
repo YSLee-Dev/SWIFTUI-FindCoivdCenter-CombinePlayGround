@@ -17,14 +17,28 @@ class CenterNetwork{
         self.session = session
     }
     
-    func getCenterList() -> AnyPublisher<[Center], URLError>{
+    func getCenterList() async throws -> [Center]{
         guard let url = api.getCenterListComponents().url else {
-            return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+            throw URLError(.badURL)
         }
         
         var request = URLRequest(url: url)
         request.setValue("Infuser \(RequestToken.token)", forHTTPHeaderField: "Authorization")
         
+        let data = try await self.session.data(for: request)
+        
+        guard let http = data.1 as? HTTPURLResponse else {
+            throw URLError(.unknown)
+        }
+        
+        guard 200..<300 ~= http.statusCode else{
+            throw URLError(.unknown)
+        }
+        
+        let decoding = try JSONDecoder().decode(CenterAPIResponse.self, from: data.0)
+        return decoding.data
+        
+        /*
         return self.session.dataTaskPublisher(for: request)
             .tryMap{data, response in
                 guard let httpResponse = response as? HTTPURLResponse else {
@@ -51,5 +65,6 @@ class CenterNetwork{
                 return $0 as? URLError ?? .init(.unknown)
             }
             .eraseToAnyPublisher()
+         */
     }
 }

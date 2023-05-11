@@ -11,10 +11,22 @@ import Combine
 
 class SelectRegionViewModel : ObservableObject{
     @Published var centers = [Center.Sido : [Center]]()
-    private var bag = Set<AnyCancellable>() // disposeBag
+    // private var bag = Set<AnyCancellable>() // disposeBag
     
     init(centerNetwork : CenterNetwork = .init()){
-        centerNetwork.getCenterList()
+        Task{
+            do{
+                let data = try await centerNetwork.getCenterList()
+                await MainActor.run{
+                    self.centers = Dictionary(grouping: data){
+                        $0.sido
+                    }
+                }
+            }catch{
+                print("Error")
+            }
+        }
+        /*
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: {[weak self] in
                 guard case .failure(let error) = $0 else {return}
@@ -26,5 +38,6 @@ class SelectRegionViewModel : ObservableObject{
                 }
             })
             .store(in: &bag) // disposed(by:)
+         */
     }
 }
